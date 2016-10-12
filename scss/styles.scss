@@ -1,13 +1,44 @@
 $gray : #d3d3d3;
 
-.box {
+.container {
   background: $gray;
   border: 3px solid black;
   padding: 40px 80px;
-  .button {
+  background-image:url(https://phinphanatic.com/files/2015/09/cloudy_d-e618500.jpg);
+  .humidity-btn {
     font-weight: bold;
+    font-size: 20pt;
     text-align: center;
     background: red;
+    color: black;
+    height: 200px;
+    width: 200px;
+    background-image:url(http://worldartsme.com/images/humid-weather-clipart-1.jpg);
+  }
+  .kelvin-btn {
+    font-weight: bold;
+    font-size: 20pt;
     color: white;
+    height: 200px;
+    width: 200px;
+    background-image:url(http://www.theiet.org/resources/library/images/biog/kelvin1878.jpg);
+  }
+
+  .celsius-btn {
+    font-weight: bold;
+    font-size: 20pt;
+    color: black;
+    height: 200px;
+    width: 200px;
+    background-image:url(http://www.uu.se/digitalAssets/272/272820_1-a-celsius.gif);
+
+  }
+  .fahrenheit-btn {
+    font-weight: bold;
+    font-size: 20pt;
+    color: white;
+    height: 200px;
+    width: 200px;
+    background-image:url(http://3.bp.blogspot.com/-ZlxJxBbJqJ8/VHRfIEwhthI/AAAAAAAAHNw/4WZBt5Km3k8/s1600/Daniel-Gabriel-Fahrenheit.jpg);
   }
 }

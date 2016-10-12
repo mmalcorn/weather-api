@@ -19,4 +19,12 @@ Temperature.prototype.getTemperatureCelsius = function(city, displayFunction) {
   });
 }
 
+Temperature.prototype.getTemperatureFahrenheit = function(city, displayFunction) {
+  $.get('http://api.openweathermap.org/data/2.5/weather?q=' + city + "&apiKey=" + apiKey).then(function(response) {
+    displayFunction(city, Math.round(((response.main.temp)*(9/5))-459.67));
+  }).fail(function(error) {
+    $('#showTemperatureFahrenheit').text(error.responseJSON.message)
+  });
+}
+
 exports.weatherModule = Temperature;

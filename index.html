@@ -9,20 +9,30 @@
   </head>
   <body>
     <div class="container">
+      <h2>Get The Weather For Your Chosen Location.</h2>
+      <h4>If you <em>feel</em> like you want to <strong>chill</strong></h4>
+      <hr>
       <label for="location">Enter a location</label>
       <input id="location" type="text">
-      <br>
-      <br>
-      <button class="btn-warning" id="weatherHumidityLocation">Get Current Humidity!</button>
-      <br>
-      <br>
-      <button class="btn-warning" id="kelvin">Get Current Temperature in Kelvin!</button>
-      <br>
-      <br>
-      <button class="btn-warning" id="celsius">Get Current Temperature in celsius!</button>
-      <br>
-      <br>
-      <button class="btn-warning" id="fahrenheit">Get Current Temperature in fahrenheit!</button>
+      <div class="row">
+
+        <div class="col-xs-2">
+          <button class="humidity-btn" id="weatherHumidityLocation">Get Current Humidity!</button>
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2">
+          <button class="kelvin-btn" id="kelvin">Get Current Temperature in Kelvin!</button>
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2">
+          <button class="celsius-btn" id="celsius">Get Current Temperature in celsius!</button>
+        </div>
+        <div class="col-xs-1"></div>
+        <div class="col-xs-2">
+          <button class="fahrenheit-btn" id="fahrenheit">Get Current Temperature in fahrenheit!</button>
+        </div>
+      </div>
+      <hr>
       <div id="showHumidity"></div>
       <div id="showTemperatureKelvin"></div>
       <div id="showTemperatureCelsius"></div>
