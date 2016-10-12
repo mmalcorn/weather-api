@@ -6,12 +6,12 @@ var displayTemperatureKelvin = function(city, tempData) {
 };
 
 var displayTemperatureCelsius = function(city, tempData) {
-  $('#showTemperatureCelsius').text("The temperature in " + city + " is " + Math.round(tempData-273.15) + " degrees celsius.");
+  $('#showTemperatureKelvin').text("The temperature in " + city + " is " + tempData + " degrees Kelvin.");
 };
-
-var displayTemperatureFahrenheit = function(city, tempData) {
-  $('#showTemperatureCelsius').text("The temperature in " + city + " is " + Math.round(((9/5)*tempData)-459.67) + " degrees fahrenheit.");
-};
+//
+// var displayTemperatureFahrenheit = function(city, tempData) {
+//   $('#showTemperatureCelsius').text("The temperature in " + city + " is " + Math.round(((9/5)*tempData)-459.67) + " degrees fahrenheit.");
+// };
 
 
 $(document).ready(function() {
@@ -19,16 +19,16 @@ $(document).ready(function() {
   $('#kelvin').click(function() {
     var city = $('#location').val();
     $('#location').val("");
-    currentWeatherObject.getTemperature(city, displayTemperatureKelvin);
+    currentWeatherObject.getTemperatureKelvin(city, displayTemperatureKelvin);
   });
   $('#celsius').click(function() {
     var city = $('#location').val();
     $('#location').val("");
-    currentWeatherObject.getTemperature(city, displayTemperatureCelsius);
+    currentWeatherObject.getTemperatureCelsius(city, displayTemperatureCelsius);
   });
-  $('#fahrenheit').click(function() {
-    var city = $('#location').val();
-    $('#location').val("");
-    currentWeatherObject.getTemperature(city, displayTemperatureFahrenheit);
-  });
+  // $('#fahrenheit').click(function() {
+  //   var city = $('#location').val();
+  //   $('#location').val("");
+  //   currentWeatherObject.getTemperature(city, displayTemperatureFahrenheit);
+  // });
 });
