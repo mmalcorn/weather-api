@@ -1,7 +1,15 @@
-$(document).ready(function(){
-  $('#location').submit(function(event){
-    event.preventDefault();
+var apiKey = require('./../.env');
+var Weather = require('./../js/weather.js').weatherModule;
+
+var displayHumidity = function(city, humidityData) {
+  $('#showHumidity').text("The humidity in " + city + " is " + humidityData + "%");
+}
+
+$(document).ready(function() {
+  var currentWeatherObject = new Weather();
+  $('#weatherHumidityLocation').click(function() {
     var city = $('#location').val();
-    $('.showWeather').text("The city you have chosen is " + city + ".");
+    $('#location').val("");
+    currentWeatherObject.getWeather(city, displayHumidity);
   });
 });
