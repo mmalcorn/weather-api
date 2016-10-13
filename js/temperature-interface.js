@@ -18,17 +18,14 @@ $(document).ready(function() {
   var currentWeatherObject = new Temperature();
   $('#kelvin').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
     currentWeatherObject.getTemperatureKelvin(city, displayTemperatureKelvin);
   });
   $('#celsius').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
     currentWeatherObject.getTemperatureCelsius(city, displayTemperatureCelsius);
   });
   $('#fahrenheit').click(function() {
     var city = $('#location').val();
-    $('#location').val("");
     currentWeatherObject.getTemperatureFahrenheit(city, displayTemperatureFahrenheit);
   });
 });

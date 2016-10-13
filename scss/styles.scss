@@ -15,6 +15,31 @@ $gray : #d3d3d3;
     width: 200px;
     background-image:url(http://worldartsme.com/images/humid-weather-clipart-1.jpg);
   }
+  #showHumidity {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: monospace;
+  }
+
+  #showTemperatureKelvin {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: monospace;
+  }
+
+  #showTemperatureCelsius {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: monospace;
+  }
+
+  #showTemperatureFahrenheit {
+    font-weight: bold;
+    font-size: 18pt;
+    font-family: monospace;
+  }
+
+
   .kelvin-btn {
     font-weight: bold;
     font-size: 20pt;

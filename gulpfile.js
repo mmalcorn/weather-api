@@ -8,6 +8,7 @@ var del = require('del');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var jshint = require('gulp-jshint');
+var watson = require('watson-developer-cloud');
 var lib = require('bower-files')({
   "overrides":{
     "bootstrap" : {

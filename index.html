@@ -14,29 +14,41 @@
       <hr>
       <label for="location">Enter a location</label>
       <input id="location" type="text">
+      <br>
+      <br>
       <div class="row">
 
-        <div class="col-xs-2">
+        <div class="col-sm-2">
           <button class="humidity-btn" id="weatherHumidityLocation">Get Current Humidity!</button>
+          <hr>
+          <div id="showHumidity"></div>
         </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-2">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
           <button class="kelvin-btn" id="kelvin">Get Current Temperature in Kelvin!</button>
+          <hr>
+          <div id="showTemperatureKelvin"></div>
         </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-2">
-          <button class="celsius-btn" id="celsius">Get Current Temperature in celsius!</button>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <button class="celsius-btn" id="celsius">Get Current Temperature in Celsius!</button>
+          <hr>
+          <div id="showTemperatureCelsius"></div>
         </div>
-        <div class="col-xs-1"></div>
-        <div class="col-xs-2">
-          <button class="fahrenheit-btn" id="fahrenheit">Get Current Temperature in fahrenheit!</button>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-2">
+          <button class="fahrenheit-btn" id="fahrenheit">Get Current Temperature in Fahrenheit!</button>
+          <hr>
+          <div id="showTemperatureFahrenheit"></div>
         </div>
       </div>
-      <hr>
-      <div id="showHumidity"></div>
-      <div id="showTemperatureKelvin"></div>
-      <div id="showTemperatureCelsius"></div>
-      <div id="showTemperatureFahrenheit"></div>
+        <!-- <form id="text-form">
+          <input id="text-input" type="text">
+          <button class="btn btn-success" type="submit">Submit text</button>
+        </form>
+        <div id="ajax-response-text">
+        
+        </div> -->
     </div>
   </body>
 </html>
